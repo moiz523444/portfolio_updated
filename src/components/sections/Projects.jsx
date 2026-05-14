@@ -5,176 +5,243 @@ import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     title: "Core 1 Consulting",
-    category: "React.js / Tech",
+    category: "Full Stack Web",
     image: "/projects/core1.jpg",
     link: "https://core1.co/",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-2 md:row-span-2",
+    problem:
+      "A high-end consulting firm needed a digital presence that matched their premium offline reputation and streamlined lead generation.",
+    solution:
+      "Developed a performance-focused React.js platform with modern animations and a highly optimized SEO structure.",
+    techStack: ["React.js", "Framer Motion", "Tailwind CSS", "Node.js"],
+    color: "from-purple-500/20 to-transparent",
   },
   {
     title: "Finnovator ME",
-    category: "React.js / Fintech",
+    category: "Fintech Platform",
     image: "/projects/finnovator.jpg",
     link: "https://www.finnovator.me/",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-1 md:row-span-1",
+    problem:
+      "The client required a complex dashboard to display real-time financial metrics for Middle Eastern markets.",
+    solution:
+      "Built a high-performance dashboard using Next.js for SSR, ensuring fast data fetching and a responsive user interface.",
+    techStack: ["Next.js", "Chart.js", "REST APIs", "TypeScript"],
+    color: "from-cyan-500/20 to-transparent",
   },
   {
-    title: "Nexus Mobile App",
-    category: "React Native / iOS & Android",
+    title: "Edge Finance Mobile App",
+    category: "Mobile Application",
     image: "/projects/react_native.jpg",
     link: "",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-1 md:row-span-1",
+    problem:
+      "A startup needed a cross-platform mobile app to bridge the gap between their web services and mobile users.",
+    solution:
+      "Developed a native-feel application using React Native, implementing complex animations and offline data synchronization.",
+    techStack: ["React Native", "Redux", "Firebase", "Expo"],
+    color: "from-pink-500/20 to-transparent",
   },
   {
     title: "Alif Loan App",
-    category: "React.js / Banking",
+    category: "Banking Solution",
     image: "/projects/alif.jpg",
     link: "http://173.208.180.149:3000/",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-1 md:row-span-1",
+    problem:
+      "A digital bank needed a secure, intuitive loan application process to reduce drop-off rates.",
+    solution:
+      "Re-engineered the onboarding flow with a step-by-step interactive UI, significantly increasing user conversion.",
+    techStack: ["React.js", "Context API", "Styled Components", "Axios"],
+    color: "from-blue-500/20 to-transparent",
   },
   {
     title: "Finnovator SA",
-    category: "React.js / Enterprise",
+    category: "Enterprise Web",
     image: "/projects/finnovator_sa.jpg",
     link: "https://www.finnovator.com.sa/",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-2 md:row-span-1",
-  },
-  {
-    title: "Duffa Website",
-    category: "HTML / CSS / JS",
-    image: "/projects/duffa.jpg",
-    link: "",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-1 md:row-span-1",
+    problem:
+      "An enterprise-level financial service needed a robust, secure, and multilingual platform for the Saudi market.",
+    solution:
+      "Architected a scalable React application with internationalization and high-security protocols for sensitive data.",
+    techStack: ["React.js", "i18next", "Auth0", "Material UI"],
+    color: "from-emerald-500/20 to-transparent",
   },
   {
     title: "FurFusion Studio",
-    category: "WordPress / Creative",
+    category: "Creative WordPress",
     image: "/projects/furfusion.jpg",
     link: "https://furfusionstudio.com/",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-1 md:row-span-1",
+    problem:
+      "A creative agency needed a unique, fast-loading portfolio site that allowed easy content management.",
+    solution:
+      "Customized a headless WordPress solution with a refined UI, focusing on high-quality image rendering and smooth transitions.",
+    techStack: ["WordPress", "Elementor", "Custom CSS", "PHP"],
+    color: "from-orange-500/20 to-transparent",
   },
   {
     title: "VinsDaddy",
-    category: "WordPress / E-Commerce",
+    category: "E-Commerce",
     image: "/projects/vinsdaddy.jpg",
     link: "https://vinsdaddy.com/",
-    color: "from-gold/20 to-transparent",
-    size: "md:col-span-1 md:row-span-1",
+    problem:
+      "An online store needed a high-conversion checkout flow and a premium brand aesthetic to stand out.",
+    solution:
+      "Developed a custom E-commerce experience with optimized product pages and a streamlined payment gateway integration.",
+    techStack: ["WordPress", "WooCommerce", "JS", "MySQL"],
+    color: "from-rose-500/20 to-transparent",
+  },
+  {
+    title: "Duffa Website",
+    category: "Custom Web App",
+    image: "/projects/duffa.jpg",
+    link: "",
+    problem:
+      "The client needed a lightweight, high-performance landing page with interactive elements to showcase their services.",
+    solution:
+      "Built a lightning-fast static site using vanilla JS and modern CSS techniques for maximum performance scores.",
+    techStack: ["HTML5", "CSS3", "JavaScript", "GSAP"],
+    color: "from-indigo-500/20 to-transparent",
   },
 ];
 
 const Projects = () => {
-  const handleMouseMove = (e, idx) => {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    card.style.setProperty("--mouse-x", `${x}px`);
-    card.style.setProperty("--mouse-y", `${y}px`);
-  };
-
   return (
     <section id="projects" className="py-24 relative">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-          <div className="max-w-2xl">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-4xl md:text-6xl font-display font-bold mb-6"
-            >
-              Selected <span className="text-gradient">Projects</span>
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-white/40 text-lg leading-relaxed"
-            >
-              A collection of high-impact digital products crafted with
-              precision and focused on user-centric performance.
-            </motion.p>
-          </div>
-          <motion.a
-            href="#projects"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 rounded-full border border-white/10 glass hover:bg-white/5 transition-all text-sm font-medium whitespace-nowrap"
+        <div className="flex flex-col items-center text-center mb-16">
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-secondary font-semibold uppercase tracking-widest text-sm mb-4"
           >
-            View All Work
-          </motion.a>
+            Case Studies
+          </motion.span>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-6xl font-display font-bold mb-6"
+          >
+            Delivering <span className="text-gradient">Impactful</span> Results
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-text-muted text-lg max-w-2xl"
+          >
+            Explore how I've helped businesses transform their digital landscape
+            through high-performance solutions.
+          </motion.p>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px] md:auto-rows-[400px] grid-flow-dense">
+        <div className="grid grid-cols-1 gap-12">
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              onMouseMove={(e) => handleMouseMove(e, idx)}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className={`group relative rounded-3xl overflow-hidden glass border border-white/5 hover:border-white/20 transition-all ${project.size}`}
+              transition={{ duration: 0.8, delay: idx * 0.1 }}
+              className="group relative glass rounded-[40px] overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500"
             >
-              {/* Background Image */}
-              <div className="absolute inset-0 transition-transform duration-1000 group-hover:scale-110">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover object-top"
-                />
-                {/* Overlay Gradients */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" />
-                <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-30 mix-blend-overlay`} />
-              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                {/* Visual Side */}
+                <div className="relative h-[300px] lg:h-auto overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                  />
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-40`}
+                  />
+                  <div className="absolute inset-0 bg-background/20" />
+                </div>
 
-              {/* Entire Card Link Overlay */}
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0 z-20 cursor-pointer"
-                  aria-label={`View ${project.title}`}
-                />
-              )}
-
-              {/* Content Overlay */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-between z-10">
-                <div className="flex justify-between items-start opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-[-10px] group-hover:translate-y-0">
-                  <span className="px-4 py-1.5 rounded-full glass text-[10px] font-bold uppercase tracking-[0.2em] border-white/10 text-white/80">
-                    {project.category}
-                  </span>
-                  <div className="flex gap-2">
+                {/* Content Side */}
+                <div className="p-8 lg:p-12 flex flex-col">
+                  <div className="flex justify-between items-start mb-6">
+                    <span className="px-4 py-1.5 rounded-full glass text-[10px] font-bold uppercase tracking-widest border-white/10 text-secondary">
+                      {project.category}
+                    </span>
                     {project.link && (
-                      <div className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center text-white group-hover:bg-[#D4AF37] group-hover:text-black group-hover:border-[#D4AF37] transition-all duration-300">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full glass border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:scale-110 transition-all duration-300"
+                      >
                         <HiArrowUpRight className="text-xl" />
-                      </div>
+                      </a>
                     )}
                   </div>
-                </div>
 
-                <div className="transform transition-all duration-500 group-hover:translate-y-[-5px]">
-                  <h3 className="text-2xl md:text-3xl font-display font-bold mb-3 text-white leading-tight">
+                  <h3 className="text-3xl lg:text-4xl font-display font-bold mb-6 text-white">
                     {project.title}
                   </h3>
-                  <div className="h-1 w-0 bg-[#D4AF37] group-hover:w-24 transition-all duration-500 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)]" />
+
+                  <div className="space-y-6 mb-8">
+                    <div>
+                      <h4 className="text-xs uppercase font-bold text-primary tracking-widest mb-2">
+                        The Challenge
+                      </h4>
+                      <p className="text-text-muted text-sm leading-relaxed">
+                        {project.problem}
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="text-xs uppercase font-bold text-secondary tracking-widest mb-2">
+                        The Solution
+                      </h4>
+                      <p className="text-text-muted text-sm leading-relaxed">
+                        {project.solution}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-auto">
+                    <h4 className="text-xs uppercase font-bold text-white/40 tracking-widest mb-3">
+                      Tech Stack
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="text-[10px] px-3 py-1 rounded-md bg-white/5 text-text-muted border border-white/5 font-medium uppercase tracking-wider"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              {/* Hover Spotlight Effect */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500 bg-[radial-gradient(circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.15)_0%,transparent_60%)]" />
             </motion.div>
           ))}
         </div>
+
+        {/* View More on GitHub CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-20 text-center"
+        >
+          <a
+            href="https://github.com/moiz523444"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-10 py-4 rounded-full glass border border-white/10 hover:border-primary/50 transition-all group font-bold text-lg"
+          >
+            <span>Explore more on GitHub</span>
+            <FaGithub className="text-2xl group-hover:text-primary transition-colors" />
+          </a>
+          <p className="text-text-muted text-sm mt-6 max-w-sm mx-auto">
+            Discover my latest experiments, open-source contributions, and
+            technical explorations.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

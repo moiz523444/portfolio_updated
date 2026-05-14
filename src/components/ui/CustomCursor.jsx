@@ -48,27 +48,29 @@ const CustomCursor = () => {
     <>
       {/* Outer Ring */}
       <motion.div
-        className="fixed top-0 left-0 w-8 h-8 rounded-full border border-[#D4AF37]/50 pointer-events-none z-[9999] hidden md:block"
+        className="fixed top-0 left-0 w-10 h-10 rounded-full border border-primary/30 pointer-events-none z-[9999] hidden md:block"
         style={{
           x: ringX,
           y: ringY,
           translateX: '-50%',
           translateY: '-50%',
-          scale: isHovered ? 2 : 1,
-          backgroundColor: isHovered ? 'rgba(212, 175, 55, 0.1)' : 'transparent',
+          scale: isHovered ? 1.5 : 1,
+          backgroundColor: isHovered ? 'rgba(139, 92, 246, 0.1)' : 'transparent',
+          borderColor: isHovered ? 'rgba(6, 182, 212, 0.5)' : 'rgba(139, 92, 246, 0.3)',
         }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       />
       
       {/* Inner Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-white rounded-full pointer-events-none z-[10000] hidden md:block mix-blend-difference"
+        className="fixed top-0 left-0 w-2 h-2 bg-primary rounded-full pointer-events-none z-[10000] hidden md:block shadow-[0_0_10px_rgba(139,92,246,0.8)]"
         style={{
           x: dotX,
           y: dotY,
           translateX: '-50%',
           translateY: '-50%',
-          scale: isHovered ? 0 : 1,
+          scale: isHovered ? 0.5 : 1,
+          backgroundColor: isHovered ? '#06B6D4' : '#8B5CF6',
         }}
       />
       

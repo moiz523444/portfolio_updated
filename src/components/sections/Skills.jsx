@@ -6,7 +6,6 @@ import {
   SiRedux,
   SiMui,
   SiFramer,
-  SiGnubash,
   SiNodedotjs,
   SiJavascript,
   SiTypescript,
@@ -15,7 +14,6 @@ import {
   SiWordpress,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
 
 const skills = [
   { name: "React.js", icon: <SiReact />, color: "#61DAFB" },
@@ -23,13 +21,9 @@ const skills = [
   { name: "React Native", icon: <TbBrandReactNative />, color: "#61DAFB" },
   { name: "WordPress", icon: <SiWordpress />, color: "#21759B" },
   { name: "MUI", icon: <SiMui />, color: "#007FFF" },
-  { name: "shadcn/ui", icon: <SiFramer />, color: "#FFFFFF" }, // Using Framer as a placeholder for shadcn aesthetics
-  { name: "Tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
   { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
-  // { name: 'Redux', icon: <SiRedux />, color: '#764ABC' },
-  // { name: 'Node.js', icon: <SiNodedotjs />, color: '#339933' },
-  // { name: 'GSAP', icon: <SiGreensock />, color: '#88CE02' },
-  // { name: 'Figma', icon: <SiFigma />, color: '#F24E1E' },
+  { name: "Tailwind", icon: <SiTailwindcss />, color: "#06B6D4" },
+  { name: "Framer Motion", icon: <SiFramer />, color: "#FFFFFF" },
 ];
 
 const Skills = () => {
@@ -43,9 +37,9 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-24 bg-card/30 relative overflow-hidden">
+    <section id="skills" className="py-24 relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#D4AF37]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto px-6 mb-20 relative z-10">
         <div className="text-center">
@@ -55,19 +49,19 @@ const Skills = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-display font-bold mb-6"
           >
-            My <span className="text-[#D4AF37]">Tech Arsenal</span>
+            My <span className="text-gradient">Tech Arsenal</span>
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, width: 0 }}
             whileInView={{ opacity: 1, width: "100px" }}
             viewport={{ once: true }}
-            className="h-1 bg-[#D4AF37] mx-auto rounded-full mb-6"
+            className="h-1 bg-primary mx-auto rounded-full mb-6"
           />
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-white/40 uppercase tracking-[0.4em] text-[10px] font-bold"
+            className="text-text-muted uppercase tracking-[0.4em] text-[10px] font-bold"
           >
             Mastering the latest industry standards
           </motion.p>
@@ -75,24 +69,20 @@ const Skills = () => {
       </div>
 
       {/* Infinite Marquee */}
-      <div className="flex overflow-hidden select-none mb-20 py-4 border-y border-white/5 bg-white/[0.02]">
-        <motion.div
-          animate={{ x: [0, -1000] }}
-          transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-          className="flex flex-nowrap gap-12 items-center"
-        >
-          {[...skills, ...skills].map((skill, idx) => (
+      <div className="flex overflow-hidden select-none mb-20 py-8 border-y border-white/5 bg-white/[0.02]">
+        <div className="flex flex-nowrap gap-12 items-center animate-marquee">
+          {[...skills, ...skills, ...skills, ...skills].map((skill, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-4 px-10 py-4 glass rounded-full border border-white/5"
+              className="flex items-center gap-4 px-10 py-4 glass rounded-2xl border border-white/5 whitespace-nowrap"
             >
-              <span className="text-2xl" style={{ color: skill.color }}>{skill.icon}</span>
+              <span className="text-3xl" style={{ color: skill.color }}>{skill.icon}</span>
               <span className="text-sm font-bold font-display uppercase tracking-widest text-white/80">
                 {skill.name}
               </span>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
 
       {/* Detailed Skill Cards */}
@@ -103,16 +93,21 @@ const Skills = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             onMouseMove={handleMouseMove}
-            viewport={{ once: true }}
-            transition={{ delay: idx * 0.05 }}
-            className="group relative rounded-3xl overflow-hidden glass border border-white/5 hover:border-[#D4AF37]/30 transition-all duration-500"
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ 
+              duration: 0.8,
+              ease: [0.22, 1, 0.36, 1], // Custom cubic-bezier for smoothness
+              delay: idx * 0.1 
+            }}
+            whileHover={{ y: -8 }}
+            className="group relative rounded-3xl overflow-hidden glass border border-white/5 hover:border-primary/20 transition-all duration-500"
           >
             {/* Spotlight Overlay */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500 bg-[radial-gradient(circle_at_var(--mouse-x)_var(--mouse-y),rgba(212,175,55,0.15)_0%,transparent_60%)]" />
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-500 bg-[radial-gradient(circle_at_var(--mouse-x)_var(--mouse-y),rgba(139,92,246,0.08)_0%,transparent_60%)]" />
             
-            <div className="relative p-10 flex flex-col items-center text-center">
+            <div className="relative p-8 flex flex-col items-center text-center">
               <div
-                className="text-6xl mb-8 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6 drop-shadow-[0_0_20px_rgba(0,0,0,0.5)]"
+                className="text-6xl mb-6 transition-all duration-700 group-hover:scale-105 drop-shadow-[0_0_20px_rgba(0,0,0,0.3)]"
                 style={{ color: skill.color }}
               >
                 {skill.icon}
@@ -124,8 +119,8 @@ const Skills = () => {
                   initial={{ width: 0 }}
                   whileInView={{ width: '90%' }}
                   viewport={{ once: true }}
-                  transition={{ duration: 1.5, ease: 'easeOut' }}
-                  className="h-full bg-gradient-to-r from-[#D4AF37] to-[#F9D976] shadow-[0_0_10px_rgba(212,175,55,0.4)]"
+                  transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 + idx * 0.1 }}
+                  className="h-full bg-gradient-primary"
                 />
               </div>
             </div>
