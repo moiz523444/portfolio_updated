@@ -139,10 +139,10 @@ const Projects = () => {
           {projects.map((project, idx) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: idx * 0.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1, ease: "easeOut", delay: idx * 0.1 }}
               className="group relative glass rounded-[40px] overflow-hidden border border-white/5 hover:border-white/10 transition-all duration-500"
             >
               <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -151,7 +151,7 @@ const Projects = () => {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-40`}
