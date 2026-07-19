@@ -39,9 +39,9 @@ const Navbar = () => {
             href="#home"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl md:text-3xl font-display font-bold tracking-tighter cursor-pointer group"
+            className="cursor-pointer group flex items-center"
           >
-            Abdul <span className="text-gradient group-hover:opacity-80 transition-all">Moiz.</span>
+            <img src="/logo.png" alt="Finnovator Tech" className="h-12 md:h-16 lg:h-20 w-auto object-contain brightness-0 invert group-hover:opacity-80 transition-all duration-300 scale-150 origin-left" />
           </motion.a>
 
           {/* Desktop Nav */}
@@ -130,8 +130,8 @@ const Navbar = () => {
               transition={{ delay: 0.8 }}
               className="absolute bottom-12 flex gap-8 text-2xl text-white/30"
             >
-              <a href="https://github.com/moiz523444" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">GitHub</a>
-              <a href="https://www.linkedin.com/in/abdul-moiz-35448a28b/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+              <a href="https://www.instagram.com/finnovatortech?igsh=Yjh1azFjNnJuY2Rw" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
+              <a href="https://www.linkedin.com/company/finnovatortech/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
             </motion.div>
           </motion.div>
         )}

@@ -2,8 +2,7 @@ import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
 import { HiArrowRight } from 'react-icons/hi';
-import { SiReact, SiNextdotjs, SiWordpress } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
+import { SiReact, SiNextdotjs, SiWordpress, SiNodedotjs } from 'react-icons/si';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -49,7 +48,7 @@ const Hero = () => {
   const techStack = [
     { name: 'React.js', icon: <SiReact className="text-[#61DAFB]" /> },
     { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
-    { name: 'React Native', icon: <TbBrandReactNative className="text-[#61DAFB]" /> },
+    { name: 'Node.js', icon: <SiNodedotjs className="text-[#339933]" /> },
     { name: 'WordPress', icon: <SiWordpress className="text-[#21759B]" /> },
   ];
 
@@ -86,8 +85,8 @@ const Hero = () => {
         </h1>
 
         <p className="hero-description text-lg md:text-xl text-text-muted max-w-3xl mx-auto mb-12 font-body leading-relaxed">
-          I help startups and businesses scale by developing high-performance,
-          modern web and mobile applications that prioritize user experience and
+          We help startups and businesses scale by developing high-performance,
+          modern web applications that prioritize user experience and
           business growth.
         </p>
 
@@ -109,7 +108,7 @@ const Hero = () => {
             className="group relative px-8 py-4 rounded-full bg-gradient-primary text-white font-bold overflow-hidden transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Explore My Work <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
+              Explore Our Work <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
 

@@ -3,15 +3,15 @@ import { HiArrowUp } from "react-icons/hi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: FaGithub, href: "https://github.com/moiz523444", label: "GitHub" },
+  { icon: FaGithub, href: "#", label: "GitHub" },
   {
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/in/abdul-moiz-35448a28b/",
+    href: "https://www.linkedin.com/company/finnovatortech/",
     label: "LinkedIn",
   },
   {
     icon: FaInstagram,
-    href: "https://www.instagram.com/abdulmoiz5141/",
+    href: "https://www.instagram.com/finnovatortech?igsh=Yjh1azFjNnJuY2Rw",
     label: "Instagram",
   },
 ];
@@ -31,12 +31,9 @@ const Footer = () => {
           <motion.a
             href="#home"
             whileHover={{ scale: 1.05 }}
-            className="text-4xl md:text-5xl font-display font-bold tracking-tighter mb-8 group cursor-pointer"
+            className="mb-8 group cursor-pointer inline-block"
           >
-            Abdul{" "}
-            <span className="text-gradient group-hover:drop-shadow-[0_0_15px_rgba(139,92,246,0.3)] transition-all">
-              Moiz.
-            </span>
+            <img src="/logo.png" alt="Finnovator Tech" className="h-16 md:h-24 w-auto object-contain brightness-0 invert group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] transition-all scale-125" />
           </motion.a>
 
           <p className="text-text-muted max-w-sm mb-12 text-sm leading-relaxed">
@@ -97,7 +94,7 @@ const Footer = () => {
 
           {/* Copyright - Right */}
           <div className="text-[10px] text-text-muted/60 uppercase tracking-[0.3em] font-bold text-center md:text-right order-3 flex-1">
-            © 2026 Crafted by <span className="text-primary">Abdul Moiz</span>
+            © 2026 Crafted by <span className="text-primary">Finnovator Tech</span>
           </div>
         </div>
       </div>

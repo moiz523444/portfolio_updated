@@ -13,12 +13,11 @@ import {
   SiGreensock,
   SiWordpress,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 
 const skills = [
   { name: "React.js", icon: <SiReact />, color: "#61DAFB" },
   { name: "Next.js", icon: <SiNextdotjs />, color: "#FFFFFF" },
-  { name: "React Native", icon: <TbBrandReactNative />, color: "#61DAFB" },
+  { name: "Node.js", icon: <SiNodedotjs />, color: "#339933" },
   { name: "WordPress", icon: <SiWordpress />, color: "#21759B" },
   { name: "MUI", icon: <SiMui />, color: "#007FFF" },
   { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
@@ -49,7 +48,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-display font-bold mb-6"
           >
-            My <span className="text-gradient">Tech Arsenal</span>
+            Our <span className="text-gradient">Tech Stack</span>
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, width: 0 }}

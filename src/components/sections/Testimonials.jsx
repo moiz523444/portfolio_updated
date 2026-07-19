@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: 'Sarah Jenkins',
     role: 'CEO @ TechFlow',
-    text: 'Working with this developer was a game-changer for our brand. The attention to detail and smooth animations brought our vision to life.',
+    text: 'Working with this team was a game-changer for our brand. The attention to detail and smooth animations brought our vision to life.',
     avatar: 'https://i.pravatar.cc/150?u=sarah',
   },
   {

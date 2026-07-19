@@ -30,11 +30,13 @@ const About = () => {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-secondary/30 rounded-br-3xl group-hover:scale-110 transition-transform duration-500" />
               
               <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden glass border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)]">
-                <img
-                  src="/projects/profile.jpg"
-                  alt="Abdul Moiz"
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                />
+                <div className="w-full h-full p-12 flex items-center justify-center transition-transform duration-1000 group-hover:scale-110">
+                  <img
+                    src="/logo.png"
+                    alt="Finnovator Tech"
+                    className="w-full h-auto object-contain brightness-0 invert scale-150"
+                  />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                 
                 {/* Floating Experience Badge */}
@@ -72,7 +74,7 @@ const About = () => {
               viewport={{ once: true }}
               className="text-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-4"
             >
-              The Story So Far
+              Our Story
             </motion.p>
             
             <motion.h2
@@ -93,12 +95,12 @@ const About = () => {
               className="space-y-6 text-text-muted text-lg leading-relaxed mb-12 max-w-2xl"
             >
               <p>
-                I am a specialized Software Engineer dedicated to crafting digital 
+                We are a specialized team of developers dedicated to crafting digital 
                 ecosystems that drive business growth. With mastery in <span className="text-white font-medium">React.js, Next.js, 
-                React Native, and WordPress</span>, I bridge complex logic with stunning UI.
+                and modern web technologies</span>, we bridge complex logic with stunning UI.
               </p>
               <p>
-                My philosophy is simple: <span className="text-primary font-bold italic">Performance is not an option, it's a foundation.</span> I prioritize scalability, security, and ROI in every line of code I write.
+                Our philosophy is simple: <span className="text-primary font-bold italic">Performance is not an option, it's a foundation.</span> We prioritize scalability, security, and ROI in every line of code we write.
               </p>
             </motion.div>
 
@@ -150,7 +152,7 @@ const About = () => {
                 href="#services"
                 className="px-10 py-5 rounded-full glass border border-white/10 hover:border-primary/40 hover:bg-white/5 transition-all text-xs font-bold tracking-widest uppercase text-white/80 hover:text-white"
               >
-                My Services
+                Our Services
               </a>
             </motion.div>
           </div>

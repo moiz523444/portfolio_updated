@@ -66,9 +66,9 @@ const Preloader = () => {
               animate="animate"
               className="relative"
             >
-              <h1 className="text-4xl md:text-7xl font-display font-bold tracking-tighter text-white mb-4">
-                Abdul <span className="text-gradient">Moiz.</span>
-              </h1>
+              <div className="mb-8 flex justify-center">
+                <img src="/logo.png" alt="Finnovator Tech" className="h-20 md:h-32 w-auto object-contain brightness-0 invert scale-125" />
+              </div>
               
               {/* Progress Bar */}
               <div className="w-48 h-[2px] bg-white/5 mx-auto rounded-full overflow-hidden relative">

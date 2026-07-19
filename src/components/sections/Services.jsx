@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import { HiOutlineDesktopComputer, HiOutlineDeviceMobile, HiOutlineColorSwatch, HiOutlineLightningBolt } from 'react-icons/hi';
+import { HiOutlineDesktopComputer, HiOutlineDeviceMobile, HiOutlineColorSwatch, HiOutlineLightningBolt, HiOutlineOfficeBuilding } from 'react-icons/hi';
 
 const ServiceCard = ({ service, index }) => {
   const x = useMotionValue(0);
@@ -93,10 +93,10 @@ const Services = () => {
       tags: ['React', 'Next.js', 'Tailwind']
     },
     {
-      title: 'Mobile Apps',
-      description: 'Creating cross-platform mobile applications for iOS and Android using React Native for a seamless native experience.',
-      icon: <HiOutlineDeviceMobile />,
-      tags: ['React Native', 'Expo', 'UX']
+      title: 'CMS & Corporate Platforms',
+      description: 'Developing secure and scalable content management systems and corporate portals tailored for enterprise needs.',
+      icon: <HiOutlineOfficeBuilding />,
+      tags: ['WordPress', 'Headless CMS', 'Enterprise']
     },
     {
       title: 'UI/UX Strategy',

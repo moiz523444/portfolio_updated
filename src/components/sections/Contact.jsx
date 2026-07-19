@@ -3,9 +3,9 @@ import { HiMail, HiPhone, HiCalendar } from "react-icons/hi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: FaGithub, href: "https://github.com/moiz523444", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://www.linkedin.com/in/abdul-moiz-35448a28b/", label: "LinkedIn" },
-  { icon: FaInstagram, href: "https://www.instagram.com/abdulmoiz5141/", label: "Instagram" },
+  { icon: FaGithub, href: "#", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/company/finnovatortech/", label: "LinkedIn" },
+  { icon: FaInstagram, href: "https://www.instagram.com/finnovatortech?igsh=Yjh1azFjNnJuY2Rw", label: "Instagram" },
 ];
 
 const Contact = () => {
@@ -39,7 +39,7 @@ const Contact = () => {
                   <div className="text-xs text-text-muted uppercase tracking-widest">
                     Email
                   </div>
-                  <div className="text-lg font-medium">moiz10633@gmail.com</div>
+                  <div className="text-lg font-medium">info@finnovatortech.com</div>
                 </div>
               </div>
               <div className="flex items-center gap-6 group">
@@ -50,7 +50,7 @@ const Contact = () => {
                   <div className="text-xs text-text-muted uppercase tracking-widest">
                     Phone
                   </div>
-                  <div className="text-lg font-medium">+92 (311-2778985)</div>
+                  <div className="text-lg font-medium">+92 328 2333777</div>
                 </div>
               </div>
             </div>

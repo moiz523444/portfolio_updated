@@ -2,22 +2,22 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    company: 'Quantum Tech Solutions',
-    role: 'Senior Frontend Developer',
-    period: '2022 - Present',
-    desc: 'Leading the development of next-gen enterprise dashboards. Optimized performance by 40% using advanced React patterns.',
+    company: 'Discovery & Planning',
+    role: 'Phase 1',
+    period: 'Step 01',
+    desc: 'We start by understanding your business goals and technical requirements to create a comprehensive roadmap.',
   },
   {
-    company: 'Vortex Digital Agency',
-    role: 'Frontend Engineer',
-    period: '2020 - 2022',
-    desc: 'Crafted bespoke digital experiences for global brands. Specialized in GSAP animations and pixel-perfect UI implementation.',
+    company: 'Design & Architecture',
+    role: 'Phase 2',
+    period: 'Step 02',
+    desc: 'Crafting pixel-perfect designs and robust system architectures tailored to your specific needs.',
   },
   {
-    company: 'Starlight Startups',
-    role: 'Junior Web Developer',
-    period: '2018 - 2020',
-    desc: 'Developed responsive web applications and contributed to internal UI libraries. Mastered the fundamentals of CSS and JS.',
+    company: 'Development & Launch',
+    role: 'Phase 3',
+    period: 'Step 03',
+    desc: 'Iterative development with regular updates, followed by thorough testing and a smooth launch.',
   },
 ];
 
@@ -32,9 +32,9 @@ const Experience = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-display font-bold mb-4"
           >
-            My <span className="text-gradient">Journey</span>
+            Our <span className="text-gradient">Process</span>
           </motion.h2>
-          <p className="text-white/40 uppercase tracking-widest text-sm">A timeline of innovation</p>
+          <p className="text-white/40 uppercase tracking-widest text-sm">How we deliver excellence</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative">

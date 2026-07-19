@@ -9,13 +9,25 @@ const projects = [
     image: "/projects/core1.jpg",
     link: "https://core1.co/",
     problem:
-      "A high-end consulting firm needed a digital presence that matched their premium offline reputation and streamlined lead generation.",
+    "A high-end consulting firm needed a digital presence that matched their premium offline reputation and streamlined lead generation.",
     solution:
       "Developed a performance-focused React.js platform with modern animations and a highly optimized SEO structure.",
-    techStack: ["React.js", "Framer Motion", "Tailwind CSS", "Node.js"],
-    color: "from-purple-500/20 to-transparent",
-  },
-  {
+      techStack: ["React.js", "Framer Motion", "Tailwind CSS", "Node.js"],
+      color: "from-purple-500/20 to-transparent",
+    },
+    {
+      title: "Edge Finance",
+      category: "Corporate Platform",
+      image: "/projects/edge-finance.jpg",
+      link: "https://edge.fin.finnovator.com.sa/",
+      problem:
+        "A financial institution needed a modern, secure, and professional web presence to attract corporate clients.",
+      solution:
+        "Developed a custom WordPress platform with a clean design, optimized for speed, reliability, and lead generation.",
+      techStack: ["WordPress", "PHP", "Custom CSS", "SEO"],
+      color: "from-blue-500/20 to-transparent",
+    },
+    {
     title: "Finnovator ME",
     category: "Fintech Platform",
     image: "/projects/finnovator.jpg",
@@ -27,28 +39,17 @@ const projects = [
     techStack: ["Next.js", "Chart.js", "REST APIs", "TypeScript"],
     color: "from-cyan-500/20 to-transparent",
   },
+
   {
-    title: "Edge Finance Mobile App",
-    category: "Mobile Application",
-    image: "/projects/react_native.jpg",
-    link: "",
+    title: "Merchant Automobiles",
+    category: "E-Commerce",
+    image: "/projects/merchant.png",
+    link: "https://demo.perfumesaaz.com/",
     problem:
-      "A startup needed a cross-platform mobile app to bridge the gap between their web services and mobile users.",
+      "A luxury fragrance brand needed a premium online store to reflect their high-end products and streamline sales.",
     solution:
-      "Developed a native-feel application using React Native, implementing complex animations and offline data synchronization.",
-    techStack: ["React Native", "Redux", "Firebase", "Expo"],
-    color: "from-pink-500/20 to-transparent",
-  },
-  {
-    title: "Alif Loan App",
-    category: "Banking Solution",
-    image: "/projects/alif.jpg",
-    link: "http://173.208.180.149:3000/",
-    problem:
-      "A digital bank needed a secure, intuitive loan application process to reduce drop-off rates.",
-    solution:
-      "Re-engineered the onboarding flow with a step-by-step interactive UI, significantly increasing user conversion.",
-    techStack: ["React.js", "Context API", "Styled Components", "Axios"],
+      "Developed a custom WordPress e-commerce solution with a sleek design and optimized user experience.",
+    techStack: ["WordPress", "WooCommerce", "PHP", "Custom CSS"],
     color: "from-blue-500/20 to-transparent",
   },
   {
@@ -130,7 +131,7 @@ const Projects = () => {
             transition={{ delay: 0.2 }}
             className="text-text-muted text-lg max-w-2xl"
           >
-            Explore how I've helped businesses transform their digital landscape
+            Explore how we've helped businesses transform their digital landscape
             through high-performance solutions.
           </motion.p>
         </div>
@@ -229,16 +230,16 @@ const Projects = () => {
           className="mt-20 text-center"
         >
           <a
-            href="https://github.com/moiz523444"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-10 py-4 rounded-full glass border border-white/10 hover:border-primary/50 transition-all group font-bold text-lg"
           >
-            <span>Explore more on GitHub</span>
+            <span>Explore our full portfolio</span>
             <FaGithub className="text-2xl group-hover:text-primary transition-colors" />
           </a>
           <p className="text-text-muted text-sm mt-6 max-w-sm mx-auto">
-            Discover my latest experiments, open-source contributions, and
+            Discover our latest work, open-source contributions, and
             technical explorations.
           </p>
         </motion.div>
