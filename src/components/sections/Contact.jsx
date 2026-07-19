@@ -5,7 +5,7 @@ import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 const socialLinks = [
   { icon: FaGithub, href: "#", label: "GitHub" },
   { icon: FaLinkedin, href: "https://www.linkedin.com/company/finnovatortech/", label: "LinkedIn" },
-  { icon: FaInstagram, href: "https://www.instagram.com/finnovatortech?igsh=Yjh1azFjNnJuY2Rw", label: "Instagram" },
+  { icon: FaInstagram, href: "https://www.instagram.com/finnovatortech", label: "Instagram" },
 ];
 
 const Contact = () => {

@@ -11,7 +11,7 @@ const socialLinks = [
   },
   {
     icon: FaInstagram,
-    href: "https://www.instagram.com/finnovatortech?igsh=Yjh1azFjNnJuY2Rw",
+    href: "https://www.instagram.com/finnovatortech",
     label: "Instagram",
   },
 ];
