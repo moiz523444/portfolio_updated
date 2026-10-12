@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { HiOutlineUser, HiOutlineLightningBolt, HiOutlineGlobeAlt, HiOutlineCode } from 'react-icons/hi';
 
 const stats = [
-  { label: 'Years Experience', value: '05+', icon: HiOutlineLightningBolt },
+  { label: 'Years Experience', value: '02+', icon: HiOutlineLightningBolt },
   { label: 'Happy Clients', value: '50+', icon: HiOutlineUser },
   { label: 'Projects Done', value: '100+', icon: HiOutlineGlobeAlt },
   { label: 'Successful ROI', value: '100%', icon: HiOutlineCode },
@@ -30,19 +30,19 @@ const About = () => {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-secondary/30 rounded-br-3xl group-hover:scale-110 transition-transform duration-500" />
               
               <div className="relative aspect-[4/5] rounded-[40px] overflow-hidden glass border border-white/10 shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)]">
-                <div className="w-full h-full p-12 flex items-center justify-center transition-transform duration-1000 group-hover:scale-110">
+                <div className="w-full h-full p-8 flex items-center justify-center transition-transform duration-1000 group-hover:scale-105">
                   <img
                     src="/logo.png"
-                    alt="Finnovator Tech"
-                    className="w-full h-auto object-contain brightness-0 invert scale-150"
+                    alt="Abdul Moiz"
+                    className="w-full h-auto max-w-[280px] object-contain rounded-2xl shadow-2xl"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent pointer-events-none" />
                 
                 {/* Floating Experience Badge */}
                 <div className="absolute top-8 left-8 glass px-5 py-3 rounded-2xl border border-white/10 backdrop-blur-md">
-                  <div className="text-2xl font-bold text-white leading-none">05+</div>
-                  <div className="text-[8px] uppercase tracking-widest text-text-muted mt-1 font-bold">Years of Excellence</div>
+                  <div className="text-2xl font-bold text-white leading-none">02+</div>
+                  <div className="text-[8px] uppercase tracking-widest text-text-muted mt-1 font-bold">Years Experience</div>
                 </div>
               </div>
 
@@ -57,10 +57,10 @@ const About = () => {
                   <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center text-white text-sm">
                     <HiOutlineCode />
                   </div>
-                  <div className="text-xs font-bold uppercase tracking-widest text-white">Expertise</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-white">Software Dev</div>
                 </div>
                 <div className="text-[10px] text-text-muted leading-relaxed">
-                  Specialized in building <span className="text-white">scalable ecosystems</span> with React & Next.js.
+                  Specialized in <span className="text-white">React, Next.js, Node</span> & scalable fintech applications.
                 </div>
               </motion.div>
             </motion.div>
@@ -74,7 +74,7 @@ const About = () => {
               viewport={{ once: true }}
               className="text-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-4"
             >
-              Our Story
+              About Me
             </motion.p>
             
             <motion.h2
@@ -83,8 +83,8 @@ const About = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8 leading-tight"
             >
-              Transforming Visions Into <br />
-              <span className="text-gradient">High-Performance Realities</span>
+              Turning Vision Into <br />
+              <span className="text-gradient">High-Performance Code</span>
             </motion.h2>
 
             <motion.div
@@ -95,12 +95,10 @@ const About = () => {
               className="space-y-6 text-text-muted text-lg leading-relaxed mb-12 max-w-2xl"
             >
               <p>
-                We are a specialized team of developers dedicated to crafting digital 
-                ecosystems that drive business growth. With mastery in <span className="text-white font-medium">React.js, Next.js, 
-                and modern web technologies</span>, we bridge complex logic with stunning UI.
+                I am <span className="text-white font-semibold">Abdul Moiz</span>, a Software Developer dedicated to crafting clean, high-performance web applications and digital platforms. With deep expertise across <span className="text-white font-medium">React.js, Next.js, Node.js, and modern web architectures</span>, I bridge robust logic with intuitive user experiences.
               </p>
               <p>
-                Our philosophy is simple: <span className="text-primary font-bold italic">Performance is not an option, it's a foundation.</span> We prioritize scalability, security, and ROI in every line of code we write.
+                My philosophy is straightforward: <span className="text-primary font-bold italic">Performance is not an afterthought, it's the foundation.</span> From enterprise dashboards and fintech loan applications to high-conversion web platforms, I build solutions engineered for scalability and real business impact.
               </p>
             </motion.div>
 
@@ -144,7 +142,7 @@ const About = () => {
                 href="#contact"
                 className="relative overflow-hidden px-10 py-5 rounded-full bg-gradient-primary text-white font-bold tracking-widest uppercase text-xs group shadow-[0_20px_40px_-15px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95 transition-all duration-300"
               >
-                <span className="relative z-10">Start a Project</span>
+                <span className="relative z-10">Get In Touch</span>
                 {/* Shimmer Effect */}
                 <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
               </a>
@@ -152,7 +150,7 @@ const About = () => {
                 href="#services"
                 className="px-10 py-5 rounded-full glass border border-white/10 hover:border-primary/40 hover:bg-white/5 transition-all text-xs font-bold tracking-widest uppercase text-white/80 hover:text-white"
               >
-                Our Services
+                My Services
               </a>
             </motion.div>
           </div>

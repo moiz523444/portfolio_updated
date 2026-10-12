@@ -14,12 +14,12 @@ const reasons = [
   },
   {
     title: "Clean & Scalable Code",
-    description: "We write maintainable, professional code that follows industry best practices.",
+    description: "I write maintainable, modular, and professional code that follows industry best practices.",
     icon: <HiCode className="text-primary" />,
   },
   {
-    title: "Business-First Mindset",
-    description: "We focus on achieving your business goals and driving measurable ROI.",
+    title: "Solution-Oriented Mindset",
+    description: "I focus on solving real technical challenges and delivering measurable business results.",
     icon: <HiTrendingUp className="text-secondary" />,
   },
 ];
@@ -57,7 +57,7 @@ const WhyHireMe = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-5xl font-display font-bold mb-8 leading-tight"
             >
-              Why partner with us for your <br />
+              Why partner with me for your <br />
               <span className="text-gradient">Next Project?</span>
             </motion.h2>
 
@@ -68,9 +68,7 @@ const WhyHireMe = () => {
               transition={{ delay: 0.1 }}
               className="text-text-muted text-lg leading-relaxed mb-12 max-w-xl"
             >
-              We combine technical excellence with a deep understanding of 
-              product strategy to deliver digital solutions that aren't just beautiful, 
-              but also highly functional and results-oriented.
+              I combine technical precision with product mindset to deliver digital applications that are not only aesthetically captivating, but also reliable, performant, and built to scale.
             </motion.p>
 
             <div className="space-y-6">
@@ -136,7 +134,7 @@ const WhyHireMe = () => {
                 <p className="text-text-muted text-xs">Let's build something extraordinary together.</p>
               </div>
               <a href="#contact" className="px-6 py-2 rounded-full bg-gradient-primary text-white text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-all">
-                Hire Us
+                Hire Me
               </a>
             </motion.div>
           </div>

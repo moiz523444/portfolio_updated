@@ -69,25 +69,23 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/10 text-secondary text-xs font-semibold uppercase tracking-wider mb-8"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full glass border border-white/10 text-secondary text-xs font-semibold uppercase tracking-wider mb-8"
         >
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
           </span>
-          Open for high-impact collaborations
+          Hello, I'm Abdul Moiz • Software Developer
         </motion.div>
 
         <h1 className="hero-title text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.1] tracking-tight mb-8">
-          <span className="inline-block">Building</span>{' '}
-          <span className="inline-block text-gradient">Performance-Driven</span> <br />
-          <span className="inline-block">Digital Products.</span>
+          <span className="inline-block">Crafting</span>{' '}
+          <span className="inline-block text-gradient">High-Impact</span> <br />
+          <span className="inline-block">Digital Experiences.</span>
         </h1>
 
         <p className="hero-description text-lg md:text-xl text-text-muted max-w-3xl mx-auto mb-12 font-body leading-relaxed">
-          We help startups and businesses scale by developing high-performance,
-          modern web applications that prioritize user experience and
-          business growth.
+          I am a passionate software developer dedicated to building blazing-fast, modern web applications, scalable fintech platforms, and seamless digital solutions with React, Next.js, and Node.js.
         </p>
 
         <div className="hero-tech-stack flex flex-wrap justify-center gap-4 mb-12">
@@ -108,7 +106,7 @@ const Hero = () => {
             className="group relative px-8 py-4 rounded-full bg-gradient-primary text-white font-bold overflow-hidden transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-primary/40 hover:scale-105"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Explore Our Work <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
+              Explore My Work <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
             </span>
           </a>
 
@@ -116,7 +114,7 @@ const Hero = () => {
             href="#contact"
             className="px-8 py-4 rounded-full border border-white/10 glass hover:bg-white/5 hover:border-white/20 transition-all duration-300 font-bold flex items-center gap-2"
           >
-            Start a Conversation
+            Get In Touch
           </a>
         </div>
       </div>
@@ -140,7 +138,7 @@ const Hero = () => {
       >
         <div className="glass-card p-4 rounded-2xl border border-white/10 flex flex-col gap-2">
           <div className="text-[10px] text-text-muted uppercase font-bold tracking-widest">Experience</div>
-          <div className="text-xl font-bold text-gradient">5+ Years</div>
+          <div className="text-xl font-bold text-gradient">2+ Years</div>
         </div>
       </motion.div>
     </section>

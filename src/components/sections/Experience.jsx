@@ -5,19 +5,19 @@ const experiences = [
     company: 'Discovery & Planning',
     role: 'Phase 1',
     period: 'Step 01',
-    desc: 'We start by understanding your business goals and technical requirements to create a comprehensive roadmap.',
+    desc: 'I start by understanding your goals and technical requirements to create a clear architecture roadmap.',
   },
   {
     company: 'Design & Architecture',
     role: 'Phase 2',
     period: 'Step 02',
-    desc: 'Crafting pixel-perfect designs and robust system architectures tailored to your specific needs.',
+    desc: 'Crafting pixel-perfect responsive interfaces and scalable system architectures tailored to your needs.',
   },
   {
     company: 'Development & Launch',
     role: 'Phase 3',
     period: 'Step 03',
-    desc: 'Iterative development with regular updates, followed by thorough testing and a smooth launch.',
+    desc: 'Agile development with clean code, modern animations, rigorous testing, and smooth production deployment.',
   },
 ];
 
@@ -32,9 +32,9 @@ const Experience = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-display font-bold mb-4"
           >
-            Our <span className="text-gradient">Process</span>
+            My <span className="text-gradient">Workflow</span>
           </motion.h2>
-          <p className="text-white/40 uppercase tracking-widest text-sm">How we deliver excellence</p>
+          <p className="text-white/40 uppercase tracking-widest text-sm">How I deliver excellence from concept to deployment</p>
         </div>
 
         <div className="max-w-4xl mx-auto relative">

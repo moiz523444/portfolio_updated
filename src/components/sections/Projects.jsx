@@ -4,6 +4,18 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Aliph Loan Application",
+    category: "Fintech Platform",
+    image: "/projects/alif.jpg",
+    link: "",
+    problem:
+      "Financial institutions required a secure, automated loan origination and applicant verification platform to streamline evaluation and eliminate manual delays.",
+    solution:
+      "Engineered an enterprise loan application and evaluation system featuring automated credit assessments, role-based workflows, and a responsive portal.",
+    techStack: ["React.js", "Node.js", "Tailwind CSS", "REST APIs", "Fintech"],
+    color: "from-cyan-500/20 to-transparent",
+  },
+  {
     title: "Core 1 Consulting",
     category: "Full Stack Web",
     image: "/projects/core1.jpg",
@@ -15,18 +27,18 @@ const projects = [
       techStack: ["React.js", "Framer Motion", "Tailwind CSS", "Node.js"],
       color: "from-purple-500/20 to-transparent",
     },
-    {
-      title: "Edge Finance",
-      category: "Corporate Platform",
-      image: "/projects/edge-finance.jpg",
-      link: "https://edge.fin.finnovator.com.sa/",
-      problem:
-        "A financial institution needed a modern, secure, and professional web presence to attract corporate clients.",
-      solution:
-        "Developed a custom WordPress platform with a clean design, optimized for speed, reliability, and lead generation.",
-      techStack: ["WordPress", "PHP", "Custom CSS", "SEO"],
-      color: "from-blue-500/20 to-transparent",
-    },
+    // {
+    //   title: "Edge Finance",
+    //   category: "Corporate Platform",
+    //   image: "/projects/edge-finance.jpg",
+    //   link: "https://edge.fin.finnovator.com.sa/",
+    //   problem:
+    //     "A financial institution needed a modern, secure, and professional web presence to attract corporate clients.",
+    //   solution:
+    //     "Developed a custom WordPress platform with a clean design, optimized for speed, reliability, and lead generation.",
+    //   techStack: ["WordPress", "PHP", "Custom CSS", "SEO"],
+    //   color: "from-blue-500/20 to-transparent",
+    // },
     {
     title: "Finnovator ME",
     category: "Fintech Platform",
@@ -44,7 +56,7 @@ const projects = [
     title: "Merchant Automobiles",
     category: "E-Commerce",
     image: "/projects/merchant.png",
-    link: "https://demo.perfumesaaz.com/",
+    link: "https://merchantsautomobile.com/",
     problem:
       "A luxury fragrance brand needed a premium online store to reflect their high-end products and streamline sales.",
     solution:
@@ -80,7 +92,7 @@ const projects = [
     title: "VinsDaddy",
     category: "E-Commerce",
     image: "/projects/vinsdaddy.jpg",
-    link: "https://vinsdaddy.com/",
+    link: "https://vindaddy.tech/",
     problem:
       "An online store needed a high-conversion checkout flow and a premium brand aesthetic to stand out.",
     solution:
@@ -92,7 +104,7 @@ const projects = [
     title: "Duffa Website",
     category: "Custom Web App",
     image: "/projects/duffa.jpg",
-    link: "",
+    link: "https://dufaa.com.sa/",
     problem:
       "The client needed a lightweight, high-performance landing page with interactive elements to showcase their services.",
     solution:
@@ -131,8 +143,8 @@ const Projects = () => {
             transition={{ delay: 0.2 }}
             className="text-text-muted text-lg max-w-2xl"
           >
-            Explore how we've helped businesses transform their digital landscape
-            through high-performance solutions.
+            A showcase of real-world web applications, fintech platforms, and
+            digital products I have architected and engineered.
           </motion.p>
         </div>
 
@@ -230,17 +242,16 @@ const Projects = () => {
           className="mt-20 text-center"
         >
           <a
-            href="#"
+            href="https://github.com/moiz523444"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-10 py-4 rounded-full glass border border-white/10 hover:border-primary/50 transition-all group font-bold text-lg"
           >
-            <span>Explore our full portfolio</span>
+            <span>Explore my GitHub repositories</span>
             <FaGithub className="text-2xl group-hover:text-primary transition-colors" />
           </a>
           <p className="text-text-muted text-sm mt-6 max-w-sm mx-auto">
-            Discover our latest work, open-source contributions, and
-            technical explorations.
+            Discover more of my open-source contributions, codebases, and technical explorations.
           </p>
         </motion.div>
       </div>

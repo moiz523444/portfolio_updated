@@ -48,7 +48,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="text-4xl md:text-6xl font-display font-bold mb-6"
           >
-            Our <span className="text-gradient">Tech Stack</span>
+            My <span className="text-gradient">Tech Stack</span>
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, width: 0 }}
@@ -62,7 +62,7 @@ const Skills = () => {
             viewport={{ once: true }}
             className="text-text-muted uppercase tracking-[0.4em] text-[10px] font-bold"
           >
-            Mastering the latest industry standards
+            Technologies & Tools I Specialize In
           </motion.p>
         </div>
       </div>

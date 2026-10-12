@@ -3,9 +3,8 @@ import { HiMail, HiPhone, HiCalendar } from "react-icons/hi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: FaGithub, href: "#", label: "GitHub" },
-  { icon: FaLinkedin, href: "https://www.linkedin.com/company/finnovatortech/", label: "LinkedIn" },
-  { icon: FaInstagram, href: "https://www.instagram.com/finnovatortech", label: "Instagram" },
+  { icon: FaGithub, href: "https://github.com/moiz523444", label: "GitHub" },
+  { icon: FaLinkedin, href: "https://www.linkedin.com/in/abdul-moiz-35448a28b/", label: "LinkedIn" },
 ];
 
 const Contact = () => {
@@ -22,12 +21,11 @@ const Contact = () => {
               className="text-4xl md:text-6xl font-display font-bold mb-8"
             >
               Let's Create <br />
-              <span className="text-gradient">Something Iconic</span>
+              <span className="text-gradient">Something Exceptional</span>
             </motion.h2>
 
             <p className="text-text-muted text-lg mb-12 max-w-md">
-              Ready to take your digital presence to the next level? Reach out
-              and let's discuss how we can build your next high-performance product.
+              Have a project in mind, need technical expertise, or looking to collaborate? Reach out and let's build your next high-performance digital solution.
             </p>
 
             <div className="space-y-6 mb-12">
@@ -39,7 +37,9 @@ const Contact = () => {
                   <div className="text-xs text-text-muted uppercase tracking-widest">
                     Email
                   </div>
-                  <div className="text-lg font-medium">info@finnovatortech.com</div>
+                  <a href="mailto:moiz10622@gmail.com" className="text-lg font-medium hover:text-primary transition-colors">
+                    moiz10633@gmail.com
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-6 group">
@@ -48,9 +48,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-xs text-text-muted uppercase tracking-widest">
-                    Phone
+                    Phone / WhatsApp
                   </div>
-                  <div className="text-lg font-medium">+92 328 2333777</div>
+                  <a href="tel:03112778985" className="text-lg font-medium hover:text-secondary transition-colors">
+                    0311 2778985
+                  </a>
                 </div>
               </div>
             </div>

@@ -125,7 +125,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-secondary uppercase tracking-[0.4em] text-[10px] font-bold mb-4"
           >
-            Our Expertise
+            My Expertise
           </motion.p>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -135,7 +135,7 @@ const Services = () => {
             className="text-4xl md:text-6xl font-display font-black leading-tight"
           >
             Solutions that drive <br />
-            <span className="text-gradient">Exponential Growth</span>
+            <span className="text-gradient">Real Business Impact</span>
           </motion.h2>
         </div>
 

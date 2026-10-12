@@ -10,19 +10,19 @@ const testimonials = [
   {
     name: 'Sarah Jenkins',
     role: 'CEO @ TechFlow',
-    text: 'Working with this team was a game-changer for our brand. The attention to detail and smooth animations brought our vision to life.',
+    text: 'Working with Abdul Moiz was a game-changer for our product. His attention to detail, clean code structure, and smooth animations brought our vision to life seamlessly.',
     avatar: 'https://i.pravatar.cc/150?u=sarah',
   },
   {
     name: 'Marcus Chen',
-    role: 'Product Design @ Linear',
-    text: 'Unmatched expertise in frontend architecture. The final product was not only beautiful but extremely performant.',
+    role: 'Product Lead @ Fintech Studio',
+    text: 'Unmatched expertise in frontend architecture and web apps. The systems Abdul Moiz built were not only intuitive and beautiful, but extremely fast and scalable.',
     avatar: 'https://i.pravatar.cc/150?u=marcus',
   },
   {
     name: 'Elena Rodriguez',
     role: 'Founder @ Ethereal',
-    text: 'A true artist in the digital space. The interactions feel cinematic and premium. Exactly what we were looking for.',
+    text: 'A true professional in modern digital development. The interactions feel fluid and premium. Abdul Moiz delivered above and beyond our expectations.',
     avatar: 'https://i.pravatar.cc/150?u=elena',
   },
 ];

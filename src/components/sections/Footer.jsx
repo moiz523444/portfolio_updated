@@ -3,16 +3,11 @@ import { HiArrowUp } from "react-icons/hi";
 import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 
 const socialLinks = [
-  { icon: FaGithub, href: "#", label: "GitHub" },
+  { icon: FaGithub, href: "https://github.com/moiz523444", label: "GitHub" },
   {
     icon: FaLinkedin,
-    href: "https://www.linkedin.com/company/finnovatortech/",
+    href: "https://www.linkedin.com/in/abdul-moiz-35448a28b/",
     label: "LinkedIn",
-  },
-  {
-    icon: FaInstagram,
-    href: "https://www.instagram.com/finnovatortech",
-    label: "Instagram",
   },
 ];
 
@@ -31,14 +26,18 @@ const Footer = () => {
           <motion.a
             href="#home"
             whileHover={{ scale: 1.05 }}
-            className="mb-8 group cursor-pointer inline-block"
+            className="mb-8 group cursor-pointer inline-flex flex-col items-center text-center"
           >
-            <img src="/logo.png" alt="Finnovator Tech" className="h-16 md:h-24 w-auto object-contain brightness-0 invert group-hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] transition-all scale-125" />
+            <span className="font-display font-extrabold text-2xl md:text-3xl text-white tracking-tight leading-none group-hover:text-primary transition-colors">
+              Abdul <span className="text-gradient">Moiz</span>
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.25em] text-text-muted font-bold mt-2">
+              Software Developer
+            </span>
           </motion.a>
 
           <p className="text-text-muted max-w-sm mb-12 text-sm leading-relaxed">
-            Building high-performance digital products that drive business
-            growth and user satisfaction.
+            Building scalable web applications, modern fintech platforms, and performance-driven digital products.
           </p>
 
           <div className="flex gap-4">
@@ -94,7 +93,7 @@ const Footer = () => {
 
           {/* Copyright - Right */}
           <div className="text-[10px] text-text-muted/60 uppercase tracking-[0.3em] font-bold text-center md:text-right order-3 flex-1">
-            © 2026 Crafted by <span className="text-primary">Finnovator Tech</span>
+            © 2026 Crafted by <span className="text-primary">Abdul Moiz</span>. All rights reserved.
           </div>
         </div>
       </div>

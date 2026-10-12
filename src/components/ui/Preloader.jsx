@@ -33,8 +33,8 @@ const Preloader = () => {
 
   const textVariants = {
     initial: { opacity: 0, y: 40 },
-    animate: { 
-      opacity: 1, 
+    animate: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.8, ease: "easeOut" }
     }
@@ -52,7 +52,7 @@ const Preloader = () => {
           {/* Main Content */}
           <div className="relative z-10 text-center">
             {/* Percentage Counter */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="text-[12rem] md:text-[18rem] font-display font-black text-white/[0.03] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none"
@@ -66,13 +66,15 @@ const Preloader = () => {
               animate="animate"
               className="relative"
             >
-              <div className="mb-8 flex justify-center">
-                <img src="/logo.png" alt="Finnovator Tech" className="h-20 md:h-32 w-auto object-contain brightness-0 invert scale-125" />
+              <div className="mb-8 flex flex-col items-center justify-center">
+                <span className="font-display font-black text-4xl md:text-6xl text-white tracking-tight">
+                  Abdul <span className="text-gradient">Moiz</span>
+                </span>
               </div>
-              
+
               {/* Progress Bar */}
               <div className="w-48 h-[2px] bg-white/5 mx-auto rounded-full overflow-hidden relative">
-                <motion.div 
+                <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${progress}%` }}
                   className="h-full bg-gradient-primary"
@@ -83,17 +85,17 @@ const Preloader = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="mt-6 text-[10px] text-text-muted uppercase tracking-[0.6em] font-bold"
+                className="mt-6 text-[10px] text-text-muted uppercase tracking-[0.5em] font-bold"
               >
-                Building Digital Excellence
+                Software Developer
               </motion.p>
             </motion.div>
           </div>
 
           {/* Decorative Elements */}
           <div className="absolute inset-0 overflow-hidden">
-            <motion.div 
-              animate={{ 
+            <motion.div
+              animate={{
                 scale: [1, 1.2, 1],
                 opacity: [0.05, 0.1, 0.05]
               }}

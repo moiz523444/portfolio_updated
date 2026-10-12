@@ -25,23 +25,25 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${
-        isScrolled ? 'py-4' : 'py-8 bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${isScrolled ? 'py-4' : 'py-8 bg-transparent'
+        }`}
     >
-      <div className={`container mx-auto px-6 flex justify-between items-center transition-all duration-500 ${
-        isScrolled ? 'max-w-5xl' : 'max-w-full'
-      }`}>
-        <div className={`flex items-center justify-between w-full transition-all duration-500 ${
-          isScrolled ? 'glass px-8 py-3 rounded-full border border-white/10' : ''
+      <div className={`container mx-auto px-6 flex justify-between items-center transition-all duration-500 ${isScrolled ? 'max-w-5xl' : 'max-w-full'
         }`}>
+        <div className={`flex items-center justify-between w-full transition-all duration-500 ${isScrolled ? 'glass px-8 py-3 rounded-full border border-white/10' : ''
+          }`}>
           <motion.a
             href="#home"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="cursor-pointer group flex items-center"
+            className="cursor-pointer group flex flex-col text-left"
           >
-            <img src="/logo.png" alt="Finnovator Tech" className="h-12 md:h-16 lg:h-20 w-auto object-contain brightness-0 invert group-hover:opacity-80 transition-all duration-300 scale-150 origin-left" />
+            <span className="font-display font-extrabold text-lg md:text-2xl text-white tracking-tight leading-none group-hover:text-primary transition-colors">
+              Abdul <span className="text-gradient">Moiz</span>
+            </span>
+            <span className="text-[9px] uppercase tracking-[0.25em] text-text-muted font-bold mt-1">
+              Software Developer
+            </span>
           </motion.a>
 
           {/* Desktop Nav */}
@@ -113,7 +115,7 @@ const Navbar = () => {
                     className="text-5xl md:text-7xl font-display font-black tracking-tighter hover:text-gradient transition-all duration-300 relative group"
                   >
                     <span className="relative z-10">{link.name}</span>
-                    <motion.div 
+                    <motion.div
                       className="absolute -bottom-2 left-0 h-2 bg-gradient-primary rounded-full z-0"
                       initial={{ width: 0 }}
                       whileHover={{ width: "100%" }}
@@ -124,14 +126,14 @@ const Navbar = () => {
             </div>
 
             {/* Social Links for Mobile */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
-              className="absolute bottom-12 flex gap-8 text-2xl text-white/30"
+              className="absolute bottom-12 flex gap-8 text-2xl text-white/40"
             >
-              <a href="https://www.instagram.com/finnovatortech?igsh=Yjh1azFjNnJuY2Rw" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a>
-              <a href="https://www.linkedin.com/company/finnovatortech/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+              <a href="https://github.com/moiz523444" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-base font-semibold">GitHub</a>
+              <a href="https://www.linkedin.com/in/abdul-moiz-35448a28b/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors text-base font-semibold">LinkedIn</a>
             </motion.div>
           </motion.div>
         )}
